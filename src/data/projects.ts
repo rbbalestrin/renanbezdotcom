@@ -19,7 +19,7 @@ const projects: Project[] = [
   {
     title: "This website!",
     techs: ["Astro", "React", "Vercel", "Tailwind CSS"],
-    link: "https://github.com/rbbalestrin/chirp",
+    link: "https://github.com/rbbalestrin/astro-portfolio",
   },
   {
     title: "Falconia Design",

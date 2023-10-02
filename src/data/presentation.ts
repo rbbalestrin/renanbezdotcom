@@ -16,7 +16,7 @@ const presentation: Presentation = {
   title: "Hello, I'm an indie app developer based in Brazil! 👋",
   // profile: "/profile.webp",
   description:
-  "Hi there, I'm **Renan Bez** aka **themir**. I'm 19 y/o and I'm a CS undergrad student. I like **fighting games**, **reading books** and **building things**. I enjoy **language design**, **web development** and I live on the terminal. Some of my favorite techs are **Rust**, **Svelte**, **Threejs**.",
+  "Hi there, I'm **Renan Bez** aka **themir**. I'm 19 y/o and I'm a CS undergrad student. I like **fighting games**, **reading books** and **building things**. I enjoy **web design**, **web development** and I live on the terminal. Some of my favorite techs are **Rust**, **Svelte**, **Three.js**.",
   socials: [
     {
       label: "Linkedin",

@@ -43,11 +43,6 @@
             <MiiChannel />
             <GithubCard />
             <Cypress />
-            <EmptyCard />
-
-            <EmptyCard />
-            <EmptyCard />
-            <EmptyCard />
 
             <EmptyCard />
             <EmptyCard />

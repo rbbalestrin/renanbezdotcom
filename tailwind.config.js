@@ -1,89 +1,61 @@
-const plugin = require("tailwindcss/plugin");
+import plugin from "tailwindcss/plugin";
+import tailwindcssImageRendering from "tailwindcss-image-rendering";
 
-/** @type {import('tailwindcss').Config} */
 export default {
   content: ["./src/**/*.{html,js,svelte,ts}"],
   theme: {
     extend: {
       fontFamily: {
-        space: ["SpaceGrotesk"],
+        space: ['"Space Grotesk"', "sans-serif"],
       },
       animation: {
         "spin-slow": "spin 8s linear infinite",
       },
+      squircleRadius: {
+        sm: "2px",
+        md: "4px",
+        lg: "6px",
+        xl: "8px",
+        "2xl": "12px",
+        "3xl": "16px",
+        "4xl": "24px",
+      },
+      squircleSmooth: {
+        sm: "0.2",
+        md: "0.6",
+        lg: "0.8",
+        xl: "1",
+      },
     },
   },
   plugins: [
-    require("tailwindcss-image-rendering")(),
-    plugin(
-      function ({ matchUtilities, theme }) {
-        matchUtilities(
-          {
-            "squircle-radius": (value) => ({
-              "--squircle-radius": value,
-            }),
-          },
-          { values: theme("squircleRadius") }
-        );
-      },
-      {
-        theme: {
-          squircleRadius: {
-            sm: "2px" /* 2px */,
-            md: "4px",
-            lg: "6px",
-            xl: "8px",
-            "2xl": "12px",
-            "3xl": "16px",
-            "4xl": "24px",
-          },
+    tailwindcssImageRendering(), // Added safely with ES module import
+
+    // Squircle Radius Utilities
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          "squircle-radius": (value) => ({
+            "--squircle-radius": value,
+          }),
         },
-      }
-    ),
-    plugin(
-      function ({ matchUtilities, theme }) {
-        matchUtilities(
-          {
-            "squircle-smooth": (value) => ({
-              "--squircle-smooth": value,
-            }),
-          },
-          { values: theme("squircleSmooth") }
-        );
-      },
-      {
-        theme: {
-          squircleSmooth: {
-            sm: "0.2",
-            md: "0.6",
-            lg: "0.8",
-            xl: "1",
-          },
+        { values: theme("squircleRadius") },
+      );
+    }),
+
+    // Squircle Smooth Utilities
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          "squircle-smooth": (value) => ({
+            "--squircle-smooth": value,
+          }),
         },
-      }
-    ),
-    // plugin(
-    //   function ({ matchUtilities, theme }) {
-    //     matchUtilities(
-    //       {
-    //         "squircle-outline": (value) => ({
-    //           "--squircle-outline": value,
-    //         }),
-    //       },
-    //       { values: theme("squircleOutline") }
-    //     );
-    //   },
-    //   {
-    //     theme: {
-    //       squircleOutline: {
-    //         1: "1px",
-    //         2: "2px",
-    //         3: "3px",
-    //         4: "4px",
-    //       },
-    //     },
-    //   }
-    // ),
+        { values: theme("squircleSmooth") },
+      );
+    }),
+
+    // Squircle Mask Utility
     plugin(function ({ addUtilities }) {
       addUtilities({
         ".squircle": {

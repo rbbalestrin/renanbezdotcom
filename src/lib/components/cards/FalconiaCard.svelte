@@ -5,7 +5,7 @@
 </script>
 
 <Card
-    href="falconia-design.vercel.app"
+    href="https://1glpnm.csb.app"
     additionalClasses="hover:scale-100 bg-[#fff]"
 >
     <div

@@ -27,7 +27,6 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content="renanbez.com" />
     <meta property="twitter:url" content="https://www.renanbez.com/" />
-    <meta name="twitter:title" content="renan" />
     <meta name="twitter:description" content="fullstack designer" />
     <meta name="twitter:image" content="https://www.renanbez.com/og.png" />
 </svelte:head>

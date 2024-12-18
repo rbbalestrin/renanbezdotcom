@@ -3,13 +3,14 @@
     import EmptyCard from "$lib/components/EmptyCard.svelte";
     import MoreSoonCard from "$lib/components/MoreSoonCard.svelte";
     import { onMount } from "svelte";
-    import FalconiaCard from "$lib/components/cards/FalconiaCard.svelte";
+    import FalconiaCard from "$lib/components/FalconiaCard.svelte";
     import GithubCard from "$lib/components/cards/GithubCard.svelte";
     import SpotifyCard from "$lib/components/cards/SpotifyCard.svelte";
     import MiiChannel from "$lib/components/cards/MiiChannel.svelte";
     import Cypress from "$lib/components/cards/CypressCard.svelte";
     import Twitter from "$lib/assets/twitter.svg";
     import Email from "$lib/assets/email.svg";
+    import AptaCard from "$lib/components/AptaCard.svelte";
 
     onMount(() => {
         const container: HTMLElement | null =
@@ -37,14 +38,14 @@
             class="fade-in-right grid grid-rows-3 grid-flow-col gap-4 p-2 px-4 md:p-8 md:px-14 w-full max-w-7xl mx-auto horizontal-scroll"
         >
             <MoreSoonCard />
-            <FalconiaCard />
+            <Cypress />
             <SpotifyCard />
 
-            <MiiChannel />
             <GithubCard />
-            <Cypress />
+            <FalconiaCard />
+            <MiiChannel />
+            <AptaCard />
 
-            <EmptyCard />
             <EmptyCard />
             <EmptyCard />
 

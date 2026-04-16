@@ -12,6 +12,7 @@
 	import Email from "$lib/assets/email.svg";
 	import AptaCard from "$lib/components/AptaCard.svelte";
 	import LetterboxdCard from "$lib/components/cards/LetterboxdCard.svelte";
+	import SubstackCard from "$lib/components/cards/SubstackCard.svelte";
 
 	onMount(() => {
 		const container: HTMLElement | null =
@@ -78,6 +79,7 @@
 			<MiiChannel />
 			<AptaCard />
 			<LetterboxdCard />
+			<SubstackCard />
 
 			<EmptyCard />
 			<EmptyCard />

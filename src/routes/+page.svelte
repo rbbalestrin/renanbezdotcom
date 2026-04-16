@@ -7,10 +7,12 @@
 	import GithubCard from "$lib/components/cards/GithubCard.svelte";
 	import SpotifyCard from "$lib/components/cards/SpotifyCard.svelte";
 	import MiiChannel from "$lib/components/cards/MiiChannel.svelte";
-	import Cypress from "$lib/components/cards/CypressCard.svelte";
+
 	import Twitter from "$lib/assets/twitter.svg";
 	import Email from "$lib/assets/email.svg";
 	import AptaCard from "$lib/components/AptaCard.svelte";
+	import LetterboxdCard from "$lib/components/cards/LetterboxdCard.svelte";
+	import SubstackCard from "$lib/components/cards/SubstackCard.svelte";
 
 	onMount(() => {
 		const container: HTMLElement | null =
@@ -70,13 +72,14 @@
 			class="fade-in-right grid grid-rows-3 sm:grid-rows-2 md:grid-rows-3 grid-flow-col gap-4 sm:gap-4 p-2 px-2 sm:px-4 md:p-8 md:px-14 w-full max-w-7xl mx-auto horizontal-scroll"
 		>
 			<MoreSoonCard />
-			<Cypress />
 			<SpotifyCard />
 
 			<GithubCard />
 			<FalconiaCard />
 			<MiiChannel />
 			<AptaCard />
+			<LetterboxdCard />
+			<SubstackCard />
 
 			<EmptyCard />
 			<EmptyCard />

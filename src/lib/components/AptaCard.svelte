@@ -15,7 +15,7 @@
         />
         <span
             class="z-10 translate-y-6 group-hover:translate-y-0 transition-transform text-xl mt-1 font-semibold"
-            >(prev.) apta.agency</span
+            >apta.agency</span
         >
         <p
             class="font-medium translate-y-6 group-hover:translate-y-0 z-10 text-gray-800/80 opacity-0 group-hover:opacity-100 transition"

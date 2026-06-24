@@ -6,13 +6,13 @@
 	import FalconiaCard from "$lib/components/FalconiaCard.svelte";
 	import GithubCard from "$lib/components/cards/GithubCard.svelte";
 	import SpotifyCard from "$lib/components/cards/SpotifyCard.svelte";
-	import MiiChannel from "$lib/components/cards/MiiChannel.svelte";
 
 	import Twitter from "$lib/assets/twitter.svg";
 	import Email from "$lib/assets/email.svg";
 	import AptaCard from "$lib/components/AptaCard.svelte";
 	import LetterboxdCard from "$lib/components/cards/LetterboxdCard.svelte";
 	import SubstackCard from "$lib/components/cards/SubstackCard.svelte";
+	import PokemonCard from "$lib/components/cards/PokemonCard.svelte";
 
 	onMount(() => {
 		const container: HTMLElement | null =
@@ -76,10 +76,10 @@
 
 			<GithubCard />
 			<FalconiaCard />
-			<MiiChannel />
 			<AptaCard />
 			<LetterboxdCard />
 			<SubstackCard />
+			<PokemonCard />
 
 			<EmptyCard />
 			<EmptyCard />

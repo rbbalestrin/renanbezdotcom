@@ -1,6 +1,6 @@
 <script>
     import Card from "../Card.svelte";
-    import Gengar from "$lib/assets/gengar.png";
+    import Pokeball from "$lib/assets/pokeball.png";
     import GengarBg from "$lib/assets/gengar-bg.png";
 </script>
 
@@ -12,8 +12,8 @@
         class="px-[22px] py-4 flex flex-col justify-end items-start text-white h-full"
     >
         <img
-            class="ml-[-23px] translate-y-6 group-hover:translate-y-0 transition-transform h-14 rendering-pixelated"
-            src={Gengar}
+            class="ml-[-10px] mb-[-10px] translate-y-6 group-hover:translate-y-0 transition-transform h-12 rendering-pixelated"
+            src={Pokeball}
             alt=""
         />
         <span
@@ -26,7 +26,8 @@
             sprite viewer
         </p>
         <img
-            class="absolute -top-2 right-0 w-[160px] h-[160px] group-hover:-translate-y-2 transition-transform opacity-60 rendering-pixelated"
+            class="absolute -top-24 -right-16 w-[350px] h-[350px] group-hover:-translate-y-2 transition-transform opacity-60 rendering-pixelated"
+            style="-webkit-mask-image: linear-gradient(to bottom, #000 0%, transparent 75%); mask-image: linear-gradient(to bottom, #000 0%, transparent 75%);"
             src={GengarBg}
             alt=""
         />
